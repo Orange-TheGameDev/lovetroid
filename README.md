@@ -1,6 +1,6 @@
 # Project 62B
 
-This is my passion project - a metroidvania/existential horror.
+This is my passion project - a sci-fi metroidvania with cool lore.
 
 Hopefully things go according to plan lol.
 
