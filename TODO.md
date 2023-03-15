@@ -1,8 +1,8 @@
 # Project 62B
 metroidvania
 
-### Incomplete
+### Incomplete X
 - [ ] Map collision
 
-### Completed ✓
+### Complete ✓
 - [x] Player

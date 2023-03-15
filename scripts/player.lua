@@ -11,15 +11,18 @@ local speed = 5
 
 local max = false
 
-function player.load()
+function player:load()
     player.img = love.graphics.newImage('Assets/player.png')
+    
+    world:add(player, player.x, player.y, 64, 64)
+    
 end
 
-function player.draw()
+function player:draw()
     love.graphics.draw(player.img, player.x, player.y, 0, 2, 2)
 end
 
-function player.update(dt)
+function player:update(dt)
     
     if player.y < 600 - 64 then
         player.onGround = false
@@ -50,6 +53,8 @@ function player.update(dt)
     
     player.y = player.y + yvel
     player.x = player.x + xvel
+    
+    world:update(player, player.x, player.y)
     
     xvel = 0
     
